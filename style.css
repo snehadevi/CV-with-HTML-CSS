@@ -69,6 +69,11 @@ body {
   font-size: 0.65em;
   font-weight: 300;
 }
+.profile h4 {
+  color: rgb(190, 188, 188);
+  font-size: 0.9em;
+  font-weight: 300;
+}
 .about-me {
   padding-top: 40px;
 }
@@ -112,6 +117,15 @@ body {
   color: rgb(190, 188, 188);
   font-weight: 200;
 }
+.contact-info ul li span a {
+  color: rgb(190, 188, 188);
+  text-decoration: none;
+}
+
+.contact-info ul li span a:hover,
+a:focus {
+  color: deeppink;
+}
 .contact-info.skills .percent {
   position: relative;
   width: 100%;
@@ -147,20 +161,20 @@ body {
   height: 0.3rem;
   background-color: rgb(32, 19, 77);
 }
-.block .education-data {
+.block .data {
   display: flex;
 }
-.block .education-data .year {
+.block .data .left {
   padding-right: 35px;
   width: 250px;
   position: relative;
 }
-.block .education-data .content {
+.block .data .content {
   padding-left: 35px;
   margin-bottom: 20px;
   width: calc(100% - 250px);
 }
-.block .education-data .year::before {
+.block .data .left::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -171,7 +185,7 @@ body {
   border: 1px solid #2625ed;
   border-radius: 50%;
 }
-.block .education-data .year::after {
+.block .data .left::after {
   content: "";
   position: absolute;
   top: 17px;
