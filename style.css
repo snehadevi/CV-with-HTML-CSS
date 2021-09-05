@@ -127,10 +127,10 @@ body {
   height: 100%;
   background: #03a9f4;
 }
-.right_side .education {
+.right_side .block {
   padding-top: 10px;
 }
-.right_side .education .title {
+.right_side .block .title {
   position: relative;
   color: rgb(32, 19, 77);
   text-transform: uppercase;
@@ -138,7 +138,7 @@ body {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
-.right_side .education .title:after {
+.right_side .block .title:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -147,20 +147,20 @@ body {
   height: 0.3rem;
   background-color: rgb(32, 19, 77);
 }
-.education-data {
+.block .education-data {
   display: flex;
 }
-.education-data .year {
+.block .education-data .year {
   padding-right: 35px;
   width: 250px;
   position: relative;
 }
-.education-data .content {
+.block .education-data .content {
   padding-left: 35px;
   margin-bottom: 20px;
   width: calc(100% - 250px);
 }
-.education-data .year::before {
+.block .education-data .year::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -171,7 +171,7 @@ body {
   border: 1px solid #2625ed;
   border-radius: 50%;
 }
-.education-data .year::after {
+.block .education-data .year::after {
   content: "";
   position: absolute;
   top: 17px;
@@ -179,4 +179,10 @@ body {
   width: 3px;
   height: 90%;
   background: #0175b2;
+}
+.block .item {
+  padding: 10px;
+}
+.block ul {
+  list-style-type: circle;
 }
