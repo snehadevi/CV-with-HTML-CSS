@@ -127,3 +127,56 @@ body {
   height: 100%;
   background: #03a9f4;
 }
+.right_side .education {
+  padding-top: 10px;
+}
+.right_side .education .title {
+  position: relative;
+  color: rgb(32, 19, 77);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.right_side .education .title:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 60%;
+  height: 0.3rem;
+  background-color: rgb(32, 19, 77);
+}
+.education-data {
+  display: flex;
+}
+.education-data .year {
+  padding-right: 35px;
+  width: 250px;
+  position: relative;
+}
+.education-data .content {
+  padding-left: 35px;
+  margin-bottom: 20px;
+  width: calc(100% - 250px);
+}
+.education-data .year::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border: 1px solid #2625ed;
+  border-radius: 50%;
+}
+.education-data .year::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 4px;
+  width: 3px;
+  height: 90%;
+  background: #0175b2;
+}
