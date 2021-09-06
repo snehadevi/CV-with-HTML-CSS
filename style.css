@@ -200,3 +200,16 @@ a:focus {
 .block ul {
   list-style-type: circle;
 }
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .left_side {
+    grid-column: span 3;
+  }
+  .right_side {
+    grid-column: span 4;
+  }
+}
