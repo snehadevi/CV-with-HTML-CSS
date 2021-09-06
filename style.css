@@ -73,6 +73,7 @@ body {
   color: rgb(190, 188, 188);
   font-size: 0.9em;
   font-weight: 300;
+  text-align: center;
 }
 .about-me {
   padding-top: 40px;
@@ -142,11 +143,11 @@ a:focus {
   background: #03a9f4;
 }
 .right_side .block {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .right_side .block .title {
   position: relative;
-  color: rgb(32, 19, 77);
+  color: rgb(13, 13, 34);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -157,9 +158,9 @@ a:focus {
   position: absolute;
   top: 50%;
   right: 0;
-  width: 50%;
+  width: 60%;
   height: 0.3rem;
-  background-color: rgb(32, 19, 77);
+  background-color: rgb(13, 13, 34);
 }
 .block .data {
   display: flex;
@@ -200,6 +201,59 @@ a:focus {
 .block ul {
   list-style-type: circle;
 }
+@media only screen and (max-width: 400px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-info ul li span {
+    font-size: small;
+  }
+  .contact-info ul li span a {
+    font-size: small;
+  }
+  .right_side .block .title:after {
+    visibility: hidden;
+  }
+  .block .data .left {
+    padding-right: 0px;
+    width: 200px;
+    position: relative;
+  }
+  .block .data .content {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    width: calc(100% - 0px);
+  }
+  .block .data .left::before {
+    visibility: hidden;
+  }
+  .block .data .left::after {
+    visibility: hidden;
+  }
+  .block .data {
+    display: block;
+  }
+  .right_side .block .title {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-info ul li span {
+    font-size: xx-small;
+  }
+  .contact-info ul li span a {
+    font-size: xx-small;
+  }
+  .right_side .block .title {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
