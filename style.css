@@ -166,7 +166,7 @@ a:focus {
 }
 .block .data .left {
   padding-right: 35px;
-  width: 150px;
+  width: 200px;
   position: relative;
 }
 .block .data .content {
@@ -203,6 +203,14 @@ a:focus {
 @media only screen and (max-width: 600px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .right_side .block .title:after {
+    width: 30%;
+  }
+  .block .data .left {
+    padding-right: 35px;
+    width: 100px;
+    position: relative;
   }
 }
 @media only screen and (max-width: 768px) {
