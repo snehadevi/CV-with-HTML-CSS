@@ -157,7 +157,7 @@ a:focus {
   position: absolute;
   top: 50%;
   right: 0;
-  width: 60%;
+  width: 50%;
   height: 0.3rem;
   background-color: rgb(32, 19, 77);
 }
@@ -166,7 +166,7 @@ a:focus {
 }
 .block .data .left {
   padding-right: 35px;
-  width: 250px;
+  width: 150px;
   position: relative;
 }
 .block .data .content {
