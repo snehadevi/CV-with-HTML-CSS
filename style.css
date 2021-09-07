@@ -166,6 +166,8 @@ a:focus {
   display: flex;
 }
 .block .data .left {
+  color: #003147;
+  font-weight: 600;
   padding-right: 35px;
   width: 200px;
   position: relative;
@@ -210,13 +212,13 @@ a:focus {
     visibility: hidden;
   }
   .block .data .left {
-    padding-right: 0px;
     width: 200px;
     position: relative;
+    margin-bottom: 10px;
   }
   .block .data .content {
     padding-left: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     width: calc(100% - 0px);
   }
   .block .data .left::before {
@@ -238,7 +240,7 @@ a:focus {
     grid-template-columns: repeat(1, 1fr);
   }
   .right_side .block .title:after {
-    width: 40%;
+    width: 30%;
   }
   .block .data .left {
     padding-right: 35px;
