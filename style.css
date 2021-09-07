@@ -238,7 +238,7 @@ a:focus {
     grid-template-columns: repeat(1, 1fr);
   }
   .right_side .block .title:after {
-    width: 50%;
+    width: 40%;
   }
   .block .data .left {
     padding-right: 35px;
