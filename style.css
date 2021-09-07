@@ -233,12 +233,12 @@ a:focus {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
   }
   .right_side .block .title:after {
-    width: 30%;
+    width: 50%;
   }
   .block .data .left {
     padding-right: 35px;
