@@ -5,7 +5,7 @@
   font-family: sans-serif;
 }
 body {
-  background: lightslategray;
+  background: lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ body {
   max-width: 1000px;
   min-height: 1000px;
   background: white;
-  margin: 50px;
+  margin: 10px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
@@ -201,16 +201,11 @@ a:focus {
 .block ul {
   list-style-type: circle;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 280px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .contact-info ul li span {
-    font-size: small;
-  }
-  .contact-info ul li span a {
-    font-size: small;
-  }
+
   .right_side .block .title:after {
     visibility: hidden;
   }
@@ -238,23 +233,7 @@ a:focus {
   }
 }
 
-@media only screen and (max-width: 280px) {
-  .container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .contact-info ul li span {
-    font-size: xx-small;
-  }
-  .contact-info ul li span a {
-    font-size: xx-small;
-  }
-  .right_side .block .title {
-    font-size: 18px;
-    text-decoration: underline;
-  }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
   }
